@@ -1,16 +1,22 @@
 #include "whattotest.cpp"
 #include <gtest/gtest.h>
 
-TEST(SquareRootTest, PositiveNos) { 
-    ASSERT_EQ(6, squareRoot(36.0));
-    ASSERT_EQ(18.0, squareRoot(324.0));
-    ASSERT_EQ(25.4, squareRoot(645.16));
-    ASSERT_EQ(0, squareRoot(0.0));
-}
-
-TEST(SquareRootTest, NegativeNos) {
-    ASSERT_EQ(-1.0, squareRoot(-15.0));
-    ASSERT_EQ(-1.0, squareRoot(-0.2));
+TEST(AddKernelWrapper, AddsArrays) {
+  int length = 10;
+  int c[length] = {0,1,2,3,4,5,6,7,8,9};
+	int b[length] = {9,8,7,6,5,4,3,2,1,0};
+  int c[length];
+  addKernelWrapper((int*) &a, (int*) &b, (int*) &c);
+  EXPECT_EQ(c[0], 9);
+  EXPECT_EQ(c[1], 9);
+  EXPECT_EQ(c[2], 9);
+  EXPECT_EQ(c[3], 9);
+  EXPECT_EQ(c[4], 9);
+  EXPECT_EQ(c[5], 9);
+  EXPECT_EQ(c[6], 9);
+  EXPECT_EQ(c[7], 9);
+  EXPECT_EQ(c[8], 9);
+  EXPECT_EQ(c[9], 9);
 }
 
 int main(int argc, char **argv) {
