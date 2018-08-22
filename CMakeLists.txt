@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
+project(MY_PROJECT LANGUAGES CUDA CXX)
 
 #Locate Cuda
 find_package(CUDA 9.0 REQUIRED)
