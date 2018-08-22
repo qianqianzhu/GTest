@@ -1,4 +1,4 @@
-#include "whattotest.cpp"
+#include "whattotest.cu"
 #include <gtest/gtest.h>
 
 TEST(AddKernelWrapper, AddsArrays) {
