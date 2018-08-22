@@ -1,4 +1,8 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8)
+
+#Locate Cuda
+find_package(CUDA 9.0 REQUIRED)
+target_link_libraries(${PROJECT_NAME} ${CUDA_LIBRARIES})
 
 # Locate GTest
 find_package(GTest REQUIRED)
