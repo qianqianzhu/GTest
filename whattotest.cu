@@ -1,6 +1,5 @@
-
+#include "whattotest.cuh"
 #define N 10
-
 __global__ void add( int *a, int *b, int *c  ) {
     //int tid = threadIdx.x + blockIdx.x * blockDim.x;
     int tid = blockIdx.x;
@@ -48,3 +47,5 @@ int addKernelWrapper(int *a, int *b, int *c) {
 
     return 0;
 }
+
+

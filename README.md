@@ -1,1 +1,4 @@
-See [http://www.eriksmistad.no/getting-started-with-google-test-on-ubuntu/](http://www.eriksmistad.no/getting-started-with-google-test-on-ubuntu/) for a guide to getting started with google test on Ubuntu
+A toy example of cuda c/c++ with unit test framework google test
+To compile:
+nvcc tests.cu whattotest.cu -o test -lgtest -lgtest_main -lpthread
+
