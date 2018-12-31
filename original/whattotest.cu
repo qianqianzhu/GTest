@@ -4,7 +4,7 @@ __global__ void add( int *a, int *b, int *c  ) {
     //int tid = threadIdx.x + blockIdx.x * blockDim.x;
     int tid = blockIdx.x;
     if (tid < N)
-        c[tid] = a[tid] - b[tid];
+        c[tid] = a[tid] + b[tid];
         //tid += blockDim.x * gridDim.x;
 }
 
@@ -47,3 +47,5 @@ int addKernelWrapper(int *a, int *b, int *c) {
 
     return 0;
 }
+
+
