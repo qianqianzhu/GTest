@@ -1,0 +1,15 @@
+[==========] Running 2 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from AddKernelWrapper
+[ RUN      ] AddKernelWrapper.AddsArrays
+[       OK ] AddKernelWrapper.AddsArrays (2859 ms)
+[----------] 1 test from AddKernelWrapper (2859 ms total)
+
+[----------] 1 test from A
+[ RUN      ] A.B
+[       OK ] A.B (0 ms)
+[----------] 1 test from A (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 2 test cases ran. (2859 ms total)
+[  PASSED  ] 2 tests.

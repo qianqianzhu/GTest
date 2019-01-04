@@ -1,0 +1,9 @@
+./mut/mut2/output.txt
+./mut/mut1/result.txt
+./mut/mut1/output.txt
+./mut/mut7/output.txt
+./mut/mut8/output.txt
+./mut/mut6/output.txt
+./mut/mut9/output.txt
+./mut/mut10/output.txt
+./mut/mut11/output.txt

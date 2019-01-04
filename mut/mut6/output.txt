@@ -1,0 +1,65 @@
+[==========] Running 2 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from AddKernelWrapper
+[ RUN      ] AddKernelWrapper.AddsArrays
+0 + 9 = 9
+1 + 8 = 8
+2 + 7 = 7
+3 + 6 = 6
+4 + 5 = 5
+5 + 4 = 4
+6 + 3 = 3
+7 + 2 = 2
+8 + 1 = 1
+9 + 0 = 0
+tests.cu:11: Failure
+Value of: 9
+Expected: c[1]
+Which is: 8
+tests.cu:12: Failure
+Value of: 9
+Expected: c[2]
+Which is: 7
+tests.cu:13: Failure
+Value of: 9
+Expected: c[3]
+Which is: 6
+tests.cu:14: Failure
+Value of: 9
+Expected: c[4]
+Which is: 5
+tests.cu:15: Failure
+Value of: 9
+Expected: c[5]
+Which is: 4
+tests.cu:16: Failure
+Value of: 9
+Expected: c[6]
+Which is: 3
+tests.cu:17: Failure
+Value of: 9
+Expected: c[7]
+Which is: 2
+tests.cu:18: Failure
+Value of: 9
+Expected: c[8]
+Which is: 1
+tests.cu:19: Failure
+Value of: 9
+Expected: c[9]
+Which is: 0
+[  FAILED  ] AddKernelWrapper.AddsArrays (2866 ms)
+[----------] 1 test from AddKernelWrapper (2866 ms total)
+
+[----------] 1 test from A
+[ RUN      ] A.B
+[       OK ] A.B (0 ms)
+[----------] 1 test from A (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 2 test cases ran. (2866 ms total)
+[  PASSED  ] 1 test.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] AddKernelWrapper.AddsArrays
+
+ 1 FAILED TEST
